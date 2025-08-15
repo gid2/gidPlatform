@@ -23,8 +23,9 @@ export const Sidebar = ({ className }: SidebarProps) => {
             <Button
                 type="button"
                 onClick={onToggle}
+                className={cls.collapseBtn}
             >
-                toggle
+                {collapsed ? '>' : '<'}
             </Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
