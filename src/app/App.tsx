@@ -1,5 +1,4 @@
 import React, {Suspense, useState} from 'react';
-import './styles/index.scss';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppRouter } from 'app/providers/router';
@@ -17,7 +16,7 @@ const App = () => {
             <Suspense fallback="">
                 <Navbar />
                 <button onClick={() => setIsOpen(true)}>toggle</button>
-                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consequatur fugiat fugit mollitia quod sunt!</Modal>
                 <div className="content-page">
                     <Sidebar />
                     <AppRouter />
